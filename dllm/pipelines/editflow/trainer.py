@@ -7,8 +7,8 @@ import torch.nn.functional as F
 
 import transformers
 
-from ...core.schedulers import BaseKappaScheduler, CubicKappaScheduler
-from .utils import pad_1d
+from dllm.core.schedulers import BaseKappaScheduler, CubicKappaScheduler
+from dllm.pipelines.editflow.utils import pad_1d
 
 
 BLANK = -1

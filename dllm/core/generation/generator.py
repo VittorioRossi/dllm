@@ -4,7 +4,7 @@ from dataclasses import dataclass
 import torch
 from transformers import PreTrainedTokenizer, PreTrainedModel
 
-from ..schedulers import BaseAlphaScheduler, LinearAlphaScheduler
+from dllm.core.schedulers import BaseAlphaScheduler, LinearAlphaScheduler
 
 
 @dataclass

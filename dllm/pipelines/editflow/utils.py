@@ -8,7 +8,7 @@ from collections.abc import Callable
 import torch
 import transformers
 
-from ...utils.utils import parse_spec
+from dllm.utils.utils import parse_spec
 
 
 # ------------------------------- Collator (x0 source) --------------------------------

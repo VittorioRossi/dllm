@@ -4,14 +4,19 @@ from typing import Optional
 import torch
 from torch import nn
 
-from ... import dream
+
+def _get_dream_classes():
+    from ....pipelines.dream import DreamConfig, DreamModel
+    return DreamConfig, DreamModel
+
+DreamConfig, DreamModel = _get_dream_classes()
 
 
-class EditFlowDreamConfig(dream.DreamConfig):
+class EditFlowDreamConfig(DreamConfig):
     model_type = "editflow-dream"  # <- NEW model_type
 
 
-class EditFlowDreamModel(dream.DreamModel):
+class EditFlowDreamModel(DreamModel):
     config_class = EditFlowDreamConfig
     modules_to_save = {
         "rate_heads",

@@ -1,3 +1,3 @@
-from ...core.trainers import MDLMTrainer
+from dllm.core.trainers import MDLMTrainer
 
 LLaDATrainer = MDLMTrainer

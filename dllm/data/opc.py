@@ -7,7 +7,7 @@ from datasets import (
     Dataset,
     IterableDatasetDict,
 )
-from .utils import _merge_datasetdicts, _merge_iterabledatasetdicts, _ensure_datasetdict, _ensure_iterabledatasetdict, _ensure_datasetdict
+from dllm.data.utils import _merge_datasetdicts, _merge_iterabledatasetdicts, _ensure_datasetdict, _ensure_iterabledatasetdict, _ensure_datasetdict
 
 
 def load_dataset_opc_sft(dataset_name_or_path: str, name: str | None = None, lang: str | None = None) -> DatasetDict:

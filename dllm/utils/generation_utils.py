@@ -1,6 +1,6 @@
 import torch
 
-from ..core.schedulers import BaseAlphaScheduler
+from dllm.core.schedulers import BaseAlphaScheduler
 
 
 def get_num_transfer_tokens(
@@ -14,7 +14,7 @@ def get_num_transfer_tokens(
         mask_num.size(0), steps, device=mask_index.device, dtype=torch.int64
     )
     device = mask_index.device
-    # Use float32 for MPS compatibility, float64 xotherwise
+    # Use float32 for MPS compatibility, float64 otherwise
     dtype = torch.float32 if device.type == "mps" else torch.float64
     for i in range(mask_num.size(0)):
         for t, s, j in zip(range(steps, 0, -1), range(steps - 1, -1, -1), range(steps)):

@@ -4,14 +4,14 @@ from typing import Optional
 import torch
 from torch import nn
 
-from ... import llada
+from ....pipelines.llada import LLaDAConfig, LLaDAModelLM
 
 
-class EditFlowLLaDAConfig(llada.LLaDAConfig):
+class EditFlowLLaDAConfig(LLaDAConfig):
     model_type = "editflow-llada"  # <- NEW model_type
 
 
-class EditFlowLLaDAModel(llada.LLaDAModelLM):
+class EditFlowLLaDAModel(LLaDAModelLM):
     config_class = EditFlowLLaDAConfig
     modules_to_save = {
         "rate_heads",

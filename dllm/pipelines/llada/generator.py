@@ -9,8 +9,8 @@ import numpy as np
 import torch
 import torch.nn.functional as F
 
-from ...utils.generation_utils import get_num_transfer_tokens
-from ...core.generation.generator import GeneratorOutput, GeneratorConfig, BaseGenerator
+from dllm.utils.generation_utils import get_num_transfer_tokens
+from dllm.core.generation.generator import GeneratorOutput, GeneratorConfig, BaseGenerator
 
 
 def add_gumbel_noise(logits: torch.Tensor, temperature: float) -> torch.Tensor:

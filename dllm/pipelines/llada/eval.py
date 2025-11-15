@@ -22,7 +22,8 @@ from lm_eval.api.model import LM
 from lm_eval.api.registry import register_model
 from lm_eval.models.utils import get_dtype
 
-from . import LLaDAGenerator, LLaDAGeneratorConfig
+import dllm
+from dllm.pipelines.llada import LLaDAGenerator, LLaDAGeneratorConfig
 
 @dataclass
 class LLaDAEvalConfig(LLaDAGeneratorConfig):

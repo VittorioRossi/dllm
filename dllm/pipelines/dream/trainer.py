@@ -2,7 +2,7 @@ from typing import Any
 
 import torch
 
-from ...core.trainers import MDLMTrainer
+from dllm.core.trainers import MDLMTrainer
 
 
 def cart_weight(
