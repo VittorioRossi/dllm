@@ -25,8 +25,7 @@ from lm_eval.api.model import LM
 from lm_eval.api.registry import register_model
 from lm_eval.models.utils import get_dtype
 
-import dllm
-from dllm.pipelines.dream import DreamGenerator, DreamGeneratorConfig
+from . import DreamGenerator, DreamGeneratorConfig
 
 eval_logger = logging.getLogger(__name__)
 

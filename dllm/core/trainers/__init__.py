@@ -1,1 +1,1 @@
-from dllm.core.trainers.mdlm import MDLMTrainer
+from .mdlm import MDLMTrainer
