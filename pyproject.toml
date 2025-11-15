@@ -2,8 +2,9 @@
 requires = ["setuptools>=61", "wheel"]
 build-backend = "setuptools.build_meta"
 
-[tool.setuptools]
-packages = ["dllm"]
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["dllm*"]
 
 [project]
 name = "dllm"
