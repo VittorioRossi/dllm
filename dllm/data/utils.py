@@ -7,7 +7,7 @@ from datasets import (
     load_from_disk,
 )
 
-from dllm.utils.utils import resolve_with_base_env, parse_spec
+from ..utils.utils import resolve_with_base_env, parse_spec
 
 
 def load_sft_dataset(

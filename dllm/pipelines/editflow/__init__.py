@@ -11,4 +11,4 @@ from .models.bert.modelling_modernbert import (
     EditFlowModernBertConfig,
     EditFlowModernBertModel,
 )
-from dllm.pipelines.editflow.trainer import EditFlowTrainer
+from .trainer import EditFlowTrainer

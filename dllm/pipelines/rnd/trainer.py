@@ -2,7 +2,7 @@ from typing import Any
 
 import torch
 
-from dllm.core.trainers import MDLMTrainer
+from ...core.trainers import MDLMTrainer
 
 
 class RNDTrainer(MDLMTrainer):

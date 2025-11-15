@@ -4,7 +4,7 @@ from typing import Optional
 import torch
 from torch import nn
 
-from dllm.pipelines import dream
+from ... import dream
 
 
 class EditFlowDreamConfig(dream.DreamConfig):

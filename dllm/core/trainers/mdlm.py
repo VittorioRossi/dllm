@@ -4,7 +4,7 @@ import torch.nn.functional as F
 import transformers
 from typing import Any
 
-from dllm.core.schedulers import BaseAlphaScheduler, LinearAlphaScheduler
+from ..schedulers import BaseAlphaScheduler, LinearAlphaScheduler
 
 
 class MDLMTrainer(transformers.Trainer):

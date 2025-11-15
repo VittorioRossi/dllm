@@ -3,7 +3,7 @@ from dataclasses import dataclass, field
 
 import transformers
 
-from dllm.utils.utils import resolve_with_base_env
+from .utils import resolve_with_base_env
 
 
 @dataclass

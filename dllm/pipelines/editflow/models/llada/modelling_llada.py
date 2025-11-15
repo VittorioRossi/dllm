@@ -4,7 +4,7 @@ from typing import Optional
 import torch
 from torch import nn
 
-from dllm.pipelines import llada
+from ... import llada
 
 
 class EditFlowLLaDAConfig(llada.LLaDAConfig):

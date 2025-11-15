@@ -8,9 +8,9 @@ import torch
 import torch.nn.functional as F
 import torch.distributions as dists
 
-from dllm.utils.generation_utils import get_num_transfer_tokens
-from dllm.pipelines.dream.utils import top_p_logits, top_k_logits
-from dllm.core.generation.generator import GeneratorOutput, GeneratorConfig, BaseGenerator
+from ...utils.generation_utils import get_num_transfer_tokens
+from .utils import top_p_logits, top_k_logits
+from ...core.generation.generator import GeneratorOutput, GeneratorConfig, BaseGenerator
 
 
 def sample_tokens(
